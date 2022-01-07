@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  language: string = 'Nepali';
-  listOfLanguage: string[] = ['english', 'Nepali'];
+  language: string = '';
+  listOfLanguage: string[] = ['English', 'Nepali'];
 
   addLanguage() {
     this.listOfLanguage.push(this.language);
-    console.log(this.listOfLanguage);
+
+    //console.log(this.listOfLanguage);
   }
 }
