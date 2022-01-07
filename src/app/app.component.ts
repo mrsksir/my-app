@@ -6,13 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'my-app';
   language: string = '';
   listOfLanguage: string[] = ['English', 'Nepali'];
 
+  // Add language at the end
   addLanguage() {
     this.listOfLanguage.push(this.language);
+  }
 
-    //console.log(this.listOfLanguage);
+  // Delete First Lang. from the list
+  deleteFirst() {
+    this.listOfLanguage.splice(0, 1);
   }
 }

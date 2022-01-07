@@ -3,8 +3,13 @@
 <!-- Dual binding -->
 <input type="text" [(ngModel)]="language">
 
-<!-- Event Binding -->
+&nbsp;
+<!-- Event Binding for Add language button-->
 <button (click)="addLanguage()">Add</button>
+
+&nbsp;
+<!-- Event Binding for the Delete First button  -->
+<button (click)="deleteFirst()">Delete First</button>
 
 <!-- List of language -->
 <h2>List Of Language:</h2>
@@ -12,5 +17,7 @@
   <li *ngFor="let lang of listOfLanguage">
     <b>{{ lang }}</b>
   </li>
-
 </ul>
+
+<!-- *ngIf condition -->
+<strong *ngIf="listOfLanguage.length > 3">Congrates!, You know more than 3 languages of the world.</strong>
