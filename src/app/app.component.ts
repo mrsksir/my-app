@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
   memberName = 'MR SK SIR';
+
+  addLanguage() {
+    console.log('addLanguage() called');
+  }
 }
